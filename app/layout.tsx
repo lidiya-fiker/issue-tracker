@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MantineProvider>
           <NavBar />
-          <main> {children}</main>
+          <main className="p-5"> {children}</main>
         </MantineProvider>
       </body>
     </html>
