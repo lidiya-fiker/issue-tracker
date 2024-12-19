@@ -12,7 +12,7 @@ export enum Status {
   CLOSED = "CLOSED",
 }
 
-@Entity()
+@Entity("issues")
 export class Issues {
   @PrimaryGeneratedColumn()
   id: number;

@@ -7,6 +7,9 @@ export async function POST(request: Request) {
     const { title, description } = await request.json();
 
     console.log("Received issue:", { title, description });
+    if (!AppDataSource.isInitialized) {
+      await AppDataSource.initialize();
+    }
 
     const issueRepository = AppDataSource.getRepository(Issues);
 

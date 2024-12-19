@@ -1,6 +1,6 @@
 import { config } from "dotenv";
 import { DataSource } from "typeorm";
-import { Issues } from "./entities/issues";
+import { Issues } from "@/app/entities/issues";
 
 config();
 
